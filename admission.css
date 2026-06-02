@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #002147;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: large;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+.hero-getstart {
+    background-color: #ffd700;
+    color: #002147;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-getstart:hover{
+    background-color: #e7c607;
+    cursor: pointer;
+
+}
+
+.hero-getstart {
+    text-decoration: none;
+    color: #002147;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+    padding: 20px;
+}
+
+.hero-about-text h2{
+    font-size: 40px;
+    margin-top: 200px;
+    margin-left: 550px;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-about-text h2{
+    font-size: 45px;
+    margin-top: 0px;
+    margin-left: 2px;;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* Admission Sections */
+.admission{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.admission-container button{
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+.admission-requirements {
+    margin-top: 90px;
+    
+}
+
+
+.admission-requirements-container{
+    background-color: #fff;
+    padding: 40px 10%;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admission-timeline {
+    background-color: #fff;
+    padding: 40px 10%;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admission-requirements-container{
+    background-color: #fff;
+    padding: 40px 10%;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: large;
+}
+
+.admission-requirements-container h2{
+    margin: 0 0 20px 0;
+}
+
+.admission-requirements-container ul li{
+    padding-top: 10px;
+}
+
+.admission-timeline-container{
+    font-size: large;
+}
+
+
+.admission-timeline-container p{
+    margin: 0 0 20px 0;
+}
+
+
+
+.admission-timeline-container h2{
+    margin: 0 0 20px 0;
+}
+
+.admission-timeline-container ul li{
+    padding-top: 10px;
+}
+
+
+/* table */
+.tuition-and-fees{
+    margin: 50px 0 30px 40px;
+}
+
+.tuition-and-fees-container h2{
+    margin: 0 0 20px 0;
+}
+
+.tuition-and-fees-container table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tuition-and-fees-container th, td,tr{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tuition-and-fees-container td{
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    nav{
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    nav button{
+        display: none;
+    }
+    nav h1{
+        font-size: 5px;
+    }
+
+
+    .hero{
+        height: 600px;
+    }
+    .hero-text{
+        padding: 30px 0 0 10px;
+        gap: 0px;
+    }
+
+    .tuition-and-fees{
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+
+    .tuition-and-fees-container h2{
+        font-size: 20px;
+    }
+
+    .tuition-and-fees-container table{
+        width: 100%;
+    }
+
+    .tuition-and-fees-container th, td,tr{
+        
+        font-size: 12px;
+    }
+
+
+
+    /* footer */
+    .container h2{
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 110vh;
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+    }
+
+    .legal h3{
+        margin-left: 20px;
+    }
+
+    .legal li{
+        margin-left: 20px;
+    }
+
+    .contact-form h3{
+        margin-left: 20px;
+    }
+
+    .contact-form input{
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .quik-links li{
+        font-size: 14px;
+        
+    }
+}
