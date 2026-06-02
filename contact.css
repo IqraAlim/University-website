@@ -68,25 +68,7 @@ nav ul li a:hover {
 }
 
 
-
-/* 
-.hero-about-text{
-    animation: fadeIn 3s ease-in-out;
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-} */
-
-
-
-
-
-
 /* contact section */
-
-
-    
 
 .location{
     margin: 50px;
@@ -154,11 +136,6 @@ nav ul li a:hover {
 
 }
 
-
-/* .contact-form-container{
-    
-
-}  */
 
 @keyframes rigt-left{
     from{
